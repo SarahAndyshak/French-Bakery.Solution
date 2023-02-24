@@ -10,11 +10,12 @@ namespace Bakery.Models
     public int Bread1
     {
       get { return _bread1; }
+      set { _bread1 = value; }
     }
     public Bread(int order1)
     {
       _bread1 = order1;
-      
+
     }
 
   }

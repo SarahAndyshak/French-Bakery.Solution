@@ -6,7 +6,7 @@ namespace Bakery.Tests
   [TestClass]
   public class BreadTests
   {
-    [TestMethod]
+    [TestMethod] // checks existence of constructor
     public void BreadConstructor_CreatesInstanceOfBread_Bread()
     {
       int order1 = 1;
@@ -14,7 +14,7 @@ namespace Bakery.Tests
       Assert.AreEqual(typeof(Bread), newBread.GetType());
     }
 
-    [TestMethod]
+    [TestMethod] // checks that order1 input matches Bread1 created Bread object
     public void Bread_ReturnsOrderForBread_Int()
     {
       int order1 = 1;
@@ -23,12 +23,12 @@ namespace Bakery.Tests
       Assert.AreEqual(order1, result);
     }
 
-    // [TestMethod]
-    // public void Bread_ReturnsPriceOfOrder_Int()
+    // [TestMethod] // checks price for Bread1 objects created by order1
+    // public void Bread_ReturnsPriceForOrder_Int()
     // {
-    //   int order1 = 1;
-    //   int result = Bread.Bread.price(order1);
-    //   Assert.AreEqual(5, result);
+    //   int order1 = 1; 
+    //   Bread newBread = new Bread(order1);
+    //   int result = newBread
     // }
   }
 }
