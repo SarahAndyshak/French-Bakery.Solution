@@ -23,6 +23,12 @@ namespace Bakery.Tests
       Assert.AreEqual(order1, result);
     }
 
-
+    // [TestMethod]
+    // public void Bread_ReturnsPriceOfOrder_Int()
+    // {
+    //   int order1 = 1;
+    //   int result = Bread.Bread.price(order1);
+    //   Assert.AreEqual(5, result);
+    // }
   }
 }

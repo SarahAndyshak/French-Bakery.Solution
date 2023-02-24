@@ -14,6 +14,8 @@ namespace Bakery.Models
     public Bread(int order1)
     {
       _bread1 = order1;
+      
     }
+
   }
 }
