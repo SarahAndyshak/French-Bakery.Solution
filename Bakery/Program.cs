@@ -7,11 +7,17 @@ namespace Bakery
   class Program
   {
     static void Main()
-    { // making static function in game makes not unique. doesnt change per instance. always what it does not matter what it is. only thing it takes into account is input.
-      // Console.WriteLine("Enter a word to calculate your Scrabble score:");
-      // string word1 = Console.ReadLine();
-      // int score = ScrabbleScore.WordScore(word1);
-      // Console.WriteLine($"Your Scrabble score for '{word1}' is {score}");
+    {
+      Console.WriteLine("*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*");
+      Console.WriteLine("Welcome to Pierre's French Bakery!");
+      Console.WriteLine("How many loaves of bread would you like?")
+      string stringNumber1 = Console.ReadLine();
+      Console.WriteLine("How many pastries would you like?");
+      string stringNumber2 = Console.ReadLine();
+      // code to calculate bread price + pastry price
+      // int breadVariable = int.Parse(stringNumber1);
+      // int pastryVariable = int.Parse(stringNumber2);
+      // Console.WriteLine($"Your total comes to ${finalTotalVariable}. Thank you!")
     }
   }
 }
