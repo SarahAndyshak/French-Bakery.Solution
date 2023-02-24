@@ -15,12 +15,14 @@ namespace Bakery.Tests
     }
 
     [TestMethod]
-    public void Bread_ReturnsPriceForBread_Int()
+    public void Bread_ReturnsOrderForBread_Int()
     {
       int order1 = 1;
       Bread newBread = new Bread(order1);
       int result = newBread.Bread1;
       Assert.AreEqual(order1, result);
     }
+
+
   }
 }
