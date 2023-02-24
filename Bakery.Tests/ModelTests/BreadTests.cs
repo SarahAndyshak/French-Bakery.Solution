@@ -23,20 +23,13 @@ namespace Bakery.Tests
       Assert.AreEqual(order1, result);
     }
 
-    // [TestMethod] // checks price for Bread1 objects created by order1
-    // public void Bread_ReturnsPriceForOrder_Int()
-    // {
-    //   int order1 = 1; 
-    //   Bread newBread = new Bread(order1);
-    //   int result = newBread
-    // }
+    [TestMethod] // checks price for Bread1 objects created by order1
+    public void Bread_ReturnsPriceForOrder_Int()
+    {
+      int order1 = 1; 
+      Bread newBread = new Bread(order1);
+      int result = newBread.GetPrice();
+      Assert.AreEqual(5, result);
+    }
   }
 }
-
-    // [TestMethod] // checks price for Bread1 objects created by order1
-    // public void Bread_ReturnsPriceForOrder_Int()
-    // {
-    //   int order1 = 1; 
-    //   Bread newBread = new Bread(order1);
-    //   int result = newBread
-    // }
