@@ -3,7 +3,6 @@ using System.Collections.Generic;
 
 namespace Bakery.Models
 {
-
   public class Bread
   {
     public int Bread1 { get; set; }
@@ -15,9 +14,9 @@ namespace Bakery.Models
 
     public static int GetPrice()
     {
-      if (order1 == 1)
+      if (Bread1 == 1)
       {
-        return order1 * 5;
+        return Bread1 * 5;
       }
       else
       {
