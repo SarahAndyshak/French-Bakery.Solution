@@ -40,6 +40,14 @@ namespace Bakery.Tests
       int result = Bread.GetPrice(); 
       Assert.AreEqual(10, result);
     }
+
+    [TestMethod] // check price with discount
+    public void Bread_ReturnsDiscount_Int()
+    {
+      Bread newBread = new Bread(20);
+      int result = Bread.GetPrice();
+      Assert.AreEqual(75, result);
+    }
     // {
     //   int order1 = 1; 
     //   Bread newBread = new Bread(order1);
