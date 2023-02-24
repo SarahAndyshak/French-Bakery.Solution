@@ -18,7 +18,7 @@ namespace Bakery.Tests
     {
       int input = 1;
       int result = Pastry.PastryOrderPrice(input);
-      Assert.AreEqual(4, result);
+      Assert.AreEqual(2, result);
     }
   }
 }
