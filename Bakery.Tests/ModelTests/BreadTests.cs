@@ -32,3 +32,11 @@ namespace Bakery.Tests
     // }
   }
 }
+
+    // [TestMethod] // checks price for Bread1 objects created by order1
+    // public void Bread_ReturnsPriceForOrder_Int()
+    // {
+    //   int order1 = 1; 
+    //   Bread newBread = new Bread(order1);
+    //   int result = newBread
+    // }
