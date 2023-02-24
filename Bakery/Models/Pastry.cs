@@ -5,10 +5,16 @@ namespace Bakery.Models
 {
   public class Pastry
   {
-    // private int _pastryOrder = 0;
-    // public int PastryOrder { get; set;}
+    private int _order;
+    public int Order
+    {
+      get { return _order; }
+      set { _order = value; }
+    }
+
     public static int PastryOrderPrice(int order)
     {
+      _order = order;
       if(order == 1)
       {
         return order * 2;
