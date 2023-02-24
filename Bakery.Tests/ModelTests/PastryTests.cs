@@ -13,7 +13,7 @@ namespace Bakery.Tests
       Assert.AreEqual(typeof(Pastry), testPastry.GetType());
     }
 
-    [TestMethod]
+    [TestMethod] // tests for price, need order to be able to change in Pastry.cs, may need constructor?
     public void PastryOrderPrice_ReturnsPriceForOrder_Int()
     {
       int input = 1;
