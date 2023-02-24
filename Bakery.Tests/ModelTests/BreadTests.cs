@@ -7,7 +7,7 @@ namespace Bakery.Tests
   public class BreadTests
   {
     [TestMethod]
-    public void BreadConstructor_CreatesInstanceOfBreadOrder_BreadOrder()
+    public void BreadConstructor_CreatesInstanceOfBread_Bread()
     {
       BreadOrder newBread = new BreadOrder();
       Assert.AreEqual(typeof(BreadOrder), newBread.GetType());
