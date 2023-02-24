@@ -32,6 +32,14 @@ namespace Bakery.Tests
       // int result = newBread.GetPrice();
       Assert.AreEqual(5, result);
     }
+
+    [TestMethod] // check price for a larger amount of bread
+    public void Bread_ReturnsPriceForLargerOrder_Int()
+    {
+      Bread newBread = new Bread(2);
+      int result = Bread.GetPrice(); 
+      Assert.AreEqual(10, result);
+    }
     // {
     //   int order1 = 1; 
     //   Bread newBread = new Bread(order1);

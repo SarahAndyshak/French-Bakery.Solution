@@ -14,7 +14,7 @@ namespace Bakery.Models
 
     public static int GetPrice()
     {
-      if (Bread1 == 1)
+      if (Bread1 >= 1)
       {
         return Bread1 * 5;
       }
