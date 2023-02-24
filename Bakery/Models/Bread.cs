@@ -8,6 +8,7 @@ namespace Bakery.Models
 
     public Bread()
     {
+      
     }
 
   }

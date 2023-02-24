@@ -1,4 +1,4 @@
-# Project Name
+# French Bakery
 
 #### By Sarah Andyshak
 
@@ -9,7 +9,7 @@
 * .Net
 
 ## Description
-
+The app should allow the user to interact with the console to specify an order of bread and/or pastry, and then return the price of that order. 
 
 ### Setup Instructions
 
@@ -20,7 +20,7 @@
 
 ## Known Bugs
 
-No known bugs at this time.
+Program does not currently work.
 
 ## License
 Enjoy the site! If you have questions or suggestions for fixing the code, please contact me!
