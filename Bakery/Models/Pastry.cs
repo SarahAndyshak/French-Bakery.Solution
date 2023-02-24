@@ -11,7 +11,11 @@ namespace Bakery.Models
     {
       if(order == 1)
       {
-        return 5;
+        return 4;
+      }
+      else
+      {
+        return -1;
       }
     }
   }
