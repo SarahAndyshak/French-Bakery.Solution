@@ -16,9 +16,10 @@ namespace Bakery.Tests
     [TestMethod]
     public void BreadOrder_ReturnsPriceForBread_Int()
     {
-      int input = 1;
-      int result = (input);
-      Assert.AreEqual(5, result);
+      int order1 = 1;
+      Bread newBread = new Bread(order1);
+      int result = newBread.OrderBread;
+      Assert.AreEqual(order1, result);
     }
   }
 }
