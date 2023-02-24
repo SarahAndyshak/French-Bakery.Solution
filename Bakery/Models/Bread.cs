@@ -5,7 +5,7 @@ namespace Bakery.Models
 {
   public class Bread
   {
-    public BreadOrder()
+    public Bread()
     {
 
     }
