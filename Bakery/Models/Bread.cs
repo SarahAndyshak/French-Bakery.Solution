@@ -5,7 +5,7 @@ namespace Bakery.Models
 {
   public class Bread
   {
-    public int Bread1 { get; set; }
+    public static int Bread1 { get; set; }
 
     public Bread(int order1)
     {
