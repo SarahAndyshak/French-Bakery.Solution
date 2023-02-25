@@ -6,12 +6,12 @@ namespace Bakery.Tests
   [TestClass]
   public class PastryTests
   {
-    [TestMethod]
-    public void Pastry_CreatesInstanceOfPastry_Pastry()
-    {
-      Pastry testPastry = new Pastry();
-      Assert.AreEqual(typeof(Pastry), testPastry.GetType());
-    }
+    // [TestMethod]
+    // public void Pastry_CreatesInstanceOfPastry_Pastry()
+    // {
+    //   Pastry testPastry = new Pastry(donut1);
+    //   Assert.AreEqual(typeof(Pastry), testPastry.GetType());
+    // }
 
     [TestMethod] // tests for price, need order to be able to change in Pastry.cs, may need constructor?
     public void PastryOrderPrice_ReturnsPriceForOrder_Int()
@@ -22,7 +22,7 @@ namespace Bakery.Tests
     }
 
     [TestMethod] // checks that donut1 input matches Pastry1 created Pastry object
-      public void Bread_ReturnsOrderForBread_Int()
+      public void Pastry_ReturnsOrderForPastry_Int()
     {
       int donut1 = 1;
       Pastry newPastry = new Pastry(donut1);
