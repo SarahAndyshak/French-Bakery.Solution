@@ -21,6 +21,13 @@ namespace Bakery.Tests
       Assert.AreEqual(2, result);
     }
 
-
+    [TestMethod] // checks that donut1 input matches Pastry1 created Pastry object
+      public void Bread_ReturnsOrderForBread_Int()
+    {
+      int donut1 = 1;
+      Pastry newPastry = new Pastry(donut1);
+      int result = Pastry.Pastry1;
+      Assert.AreEqual(donut1, result);
+    }
   }
 }
