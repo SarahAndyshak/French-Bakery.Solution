@@ -45,15 +45,15 @@ namespace Bakery.Tests
     {
       Pastry newPastry = new Pastry(6);
       int result = Pastry.PastryOrderPrice(); 
-      Assert.AreEqual(12, result);
+      Assert.AreEqual(10, result);
     }
 
     [TestMethod]
     public void Pastry_DiscountedPrice_Int()
     {
-      Pastry newPastry = new Pastry(5);
+      Pastry newPastry = new Pastry(7);
       int result = Pastry.PastryOrderPrice();
-      Assert.AreEqual(8, result);
+      Assert.AreEqual(12, result);
     }
   }
 }
