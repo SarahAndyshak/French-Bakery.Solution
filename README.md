@@ -9,7 +9,7 @@
 * .Net
 
 ## Description
-The app should allow the user to interact with the console to specify an order of bread and/or pastry, and then return the price of that order. 
+The user interacts with the console, answering prompts about how many loaves of bread and/or pastries they would like to buy, and their total cost is returned to them. 
 
 ### Setup Instructions
 

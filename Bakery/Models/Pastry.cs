@@ -13,14 +13,25 @@ namespace Bakery.Models
 
     public static int PastryOrderPrice()
     {
-      if(Pastry1 >= 1)
+      if (Pastry1 >= 1)
       {
-        return Pastry1 * 2;
+        return ((Pastry1 - (Pastry1 / 4)) * 2);
       }
       else
       {
         return -1;
       }
     }
+    // public static int PastryOrderPrice()
+    // {
+    //   if(Pastry1 >= 1)
+    //   {
+    //     return Pastry1 * 2;
+    //   }
+    //   else
+    //   {
+    //     return -1;
+    //   }
+    // }
   }
 }
