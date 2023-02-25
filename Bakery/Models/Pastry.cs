@@ -5,19 +5,17 @@ namespace Bakery.Models
 {
   public class Pastry
   {
-    // private int _order;
-    // public int Order
-    // {
-    //   get { return _order; }
-    //   set { _order = value; }
-    // }
-
-    public static int PastryOrderPrice(int order)
+    public static int Pastry1 { get; set; }
+    public Pastry(int donut1)
     {
-      // _order = order;
-      if(order == 1)
+      Pastry1 = donut1;
+    }
+
+    public static int PastryOrderPrice()
+    {
+      if(Pastry1 >= 1)
       {
-        return order * 2;
+        return Pastry1 * 2;
       }
       else
       {
