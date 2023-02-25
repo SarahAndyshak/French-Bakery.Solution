@@ -16,8 +16,9 @@ namespace Bakery.Tests
     [TestMethod] // tests for price, need order to be able to change in Pastry.cs, may need constructor?
     public void PastryOrderPrice_ReturnsPriceForOrder_Int()
     {
-      int input = 1;
-      int result = Pastry.PastryOrderPrice(input);
+      Pastry newPastry = new PastryTests(1);
+      // int input = 1;
+      int result = Pastry.PastryOrderPrice();
       Assert.AreEqual(2, result);
     }
 
@@ -33,17 +34,18 @@ namespace Bakery.Tests
     [TestMethod] // check price for larger order
     public void Pastry_ReturnsForLargerOrder_Int()
     {
-      int input = 6;
-      int result = Pastry.PastryOrderPrice(input);
+      // int input = 6;
+      Pastry newPastry = new PastryTests(1);
+      int result = Pastry.PastryOrderPrice();
       Assert.AreEqual(12, result);
     }
 
-        [TestMethod] // check price for larger order
-    public void Pastry_ReturnsForLargerOrderCorrected_Int()
+    [TestMethod] // check price for a larger amount of pastry
+    public void Pastry_PastryOrderPrice_Int()
     {
-      Pastry newPastry = new Pastry(3);
+      Pastry newPastry = new Pastry(2);
       int result = Pastry.PastryOrderPrice(); 
-      Assert.AreEqual(6, result);
+      Assert.AreEqual(10, result);
     }
   }
 }
