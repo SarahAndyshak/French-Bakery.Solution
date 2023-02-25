@@ -55,5 +55,14 @@ namespace Bakery.Tests
       int result = Pastry.PastryOrderPrice();
       Assert.AreEqual(12, result);
     }
+
+    [TestMethod]
+    public void
+    Pastry_UpdatedDiscountMath_Int()
+    {
+      Pastry newPastry = new Pastry(7);
+      int result = Pastry.PastryOrderPrice();
+      Assert.AreEqual(12, result);
+    }
   }
 }
