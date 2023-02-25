@@ -29,5 +29,14 @@ namespace Bakery.Tests
       int result = Pastry.Pastry1;
       Assert.AreEqual(donut1, result);
     }
+
+    [TestMethod] // check price for larger order
+    public void Pastry_ReturnsForLargerOrder()
+    {
+      int donut1 = 3;
+      Pastry newPastry = new Pastry(donut1);
+      int result = Pastry.Pastry1;
+      Assert.AreEqual(donut1, result);
+    }
   }
 }
