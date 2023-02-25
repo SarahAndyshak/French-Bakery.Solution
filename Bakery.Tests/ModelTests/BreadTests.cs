@@ -48,5 +48,13 @@ namespace Bakery.Tests
       int result = Bread.GetPrice();
       Assert.AreEqual(10, result);
     }
+
+    [TestMethod] // check refactored discount logic
+    public void Bread_ModuloTest_Int()
+    {
+      Bread newBread = new Bread(7);
+      int result = Bread.GetPrice();
+      Assert.AreEqual(25, result);
+    }
   }
 }
