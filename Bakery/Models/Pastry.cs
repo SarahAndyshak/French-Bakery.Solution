@@ -15,7 +15,7 @@ namespace Bakery.Models
     {
       if (Pastry1 >= 1)
       {
-        return ((Pastry1 - (Pastry1 / 4)) * 2);
+        return (Pastry1 * 2) - (Pastry1 / 4) * 2;
       }
       else
       {
