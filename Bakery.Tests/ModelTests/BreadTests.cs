@@ -48,11 +48,5 @@ namespace Bakery.Tests
       int result = Bread.GetPrice();
       Assert.AreEqual(10, result);
     }
-    // {
-    //   int order1 = 1; 
-    //   Bread newBread = new Bread(order1);
-    //   int result = newBread.GetPrice();
-    //   Assert.AreEqual(order1, result);
-    // }
   }
 }
