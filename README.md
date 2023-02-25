@@ -22,7 +22,7 @@ The user interacts with the console, answering prompts about how many loaves of 
 
 ## Known Bugs
 
-Program does not currently work.
+As of 2/25/23 no known bugs.
 
 ## License
 Enjoy the site! If you have questions or suggestions for fixing the code, please contact me!
