@@ -17,10 +17,14 @@ namespace Bakery
       Console.WriteLine("How many pastries would you like?");
       string stringNumber2 = Console.ReadLine();
       // code to calculate bread price + pastry price
-      // int breadVariable = int.Parse(stringNumber1);
-      // int pastryVariable = int.Parse(stringNumber2);
-      // Add code to add stringNumber1 and stringNumber2 here
-      // Console.WriteLine($"Your total comes to ${finalTotalVariable}. Thank you!")
+      int breadOrder = int.Parse(stringNumber1);
+      int pastryOrder = int.Parse(stringNumber2);
+      Bread newBread = new Bread(breadOrder);
+      Pastry newPastry = new Pastry(pastryOrder);
+      int result1 = Bread.GetPrice();
+      int result2 = Pastry.PastryOrderPrice();
+      int finalTotal = result1 + result2;
+      Console.WriteLine($"Your total comes to ${finalTotal}. Thank you!");
     }
   }
 }
