@@ -19,8 +19,8 @@ namespace Bakery.Tests
     {
       int order1 = 1;
       Bread newBread = new Bread(order1);
-      int result = Bread.Bread1;
-      // int result = newBread.Bread1;
+      // int result = Bread.Bread1;
+      int result = newBread.Bread1;
       Assert.AreEqual(order1, result);
     }
 
@@ -28,8 +28,8 @@ namespace Bakery.Tests
     public void Bread_ReturnsPriceForOrder_Int()
     {
       Bread newBread = new Bread(1);
-      int result = Bread.GetPrice();
-      // int result = newBread.GetPrice();
+      // int result = Bread.GetPrice();
+      int result = newBread.GetPrice();
       Assert.AreEqual(5, result);
     }
 
@@ -37,7 +37,9 @@ namespace Bakery.Tests
     public void Bread_ReturnsPriceForLargerOrder_Int()
     {
       Bread newBread = new Bread(2);
-      int result = Bread.GetPrice(); 
+      // int result = Bread.GetPrice(); 
+      int result = newBread.GetPrice(); 
+
       Assert.AreEqual(10, result);
     }
 
@@ -45,7 +47,8 @@ namespace Bakery.Tests
     public void Bread_ReturnsDiscount_Int()
     {
       Bread newBread = new Bread(3);
-      int result = Bread.GetPrice();
+      // int result = Bread.GetPrice();
+      int result = newBread.GetPrice();
       Assert.AreEqual(10, result);
     }
 
@@ -53,7 +56,8 @@ namespace Bakery.Tests
     public void Bread_ModuloTest_Int()
     {
       Bread newBread = new Bread(7);
-      int result = Bread.GetPrice();
+      // int result = Bread.GetPrice();
+      int result = newBread.GetPrice();
       Assert.AreEqual(25, result);
     }
   }

@@ -21,7 +21,7 @@ namespace Bakery
       int pastryOrder = int.Parse(stringNumber2);
       Bread newBread = new Bread(breadOrder);
       Pastry newPastry = new Pastry(pastryOrder);
-      int result1 = Bread.GetPrice();
+      int result1 = newBread.GetPrice();
       int result2 = Pastry.PastryOrderPrice();
       int finalTotal = result1 + result2;
       Console.WriteLine($"Your total comes to ${finalTotal}. Thank you!");
