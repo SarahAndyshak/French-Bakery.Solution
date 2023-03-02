@@ -22,7 +22,7 @@ namespace Bakery
       Bread newBread = new Bread(breadOrder);
       Pastry newPastry = new Pastry(pastryOrder);
       int result1 = newBread.GetPrice();
-      int result2 = Pastry.PastryOrderPrice();
+      int result2 = newPastry.PastryOrderPrice();
       int finalTotal = result1 + result2;
       Console.WriteLine($"Your total comes to ${finalTotal}. Thank you!");
     }

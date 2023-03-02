@@ -5,13 +5,13 @@ namespace Bakery.Models
 {
   public class Pastry
   {
-    public static int Pastry1 { get; set; }
+    public int Pastry1 { get; set; }
     public Pastry(int donut1)
     {
       Pastry1 = donut1;
     }
 
-    public static int PastryOrderPrice()
+    public int PastryOrderPrice()
     {
       if (Pastry1 >= 1)
       {

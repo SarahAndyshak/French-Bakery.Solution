@@ -13,7 +13,7 @@ namespace Bakery.Models
     }
 
     // public static int GetPrice()
-        public int GetPrice()
+    public int GetPrice()
 
     {
       if (Bread1 >= 1)
