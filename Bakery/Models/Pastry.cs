@@ -19,16 +19,5 @@ namespace Bakery.Models
         return -1;
       }
     }
-    // public static int PastryOrderPrice()
-    // {
-    //   if(Pastry1 >= 1)
-    //   {
-    //     return Pastry1 * 2;
-    //   }
-    //   else
-    //   {
-    //     return -1;
-    //   }
-    // }
   }
 }

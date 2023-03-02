@@ -16,6 +16,8 @@ namespace Bakery
       Console.WriteLine("How many pastries would you like?");
       string stringNumber2 = Console.ReadLine();
       // code to calculate bread price + pastry price
+      try
+      {
       int breadOrder = int.Parse(stringNumber1);
       int pastryOrder = int.Parse(stringNumber2);
       Bread newBread = new Bread(breadOrder);
@@ -24,6 +26,14 @@ namespace Bakery
       int result2 = newPastry.PastryOrderPrice();
       int finalTotal = result1 + result2;
       Console.WriteLine($"Your total comes to ${finalTotal}. Thank you!");
+      }
+      catch
+      {
+        Console.WriteLine("!!!!!!!!!!");
+        Console.WriteLine("ERROR: Please enter only whole numbers. Partial numbers and letters will not be accepted.");
+        Console.WriteLine("Please try again.");
+        Main();
+      }
     }
   }
 }
